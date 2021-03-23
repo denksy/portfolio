@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Web Dev Noob | Eden Baui</title>
+    <link rel="icon" href="images/wdn-icon.svg" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -31,7 +32,9 @@
   </head>
   <body>
     <nav class="nav-bar container-fluid">
-      <ul class="row justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-between m-0">
+      <ul
+        class="row justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-between m-0"
+      >
         <div
           class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-2 d-flex justify-content-center"
         >
@@ -43,17 +46,10 @@
           class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-7 d-flex flex-row justify-content-center"
         >
           <li class="list nav-target text-nowrap" id="about-link">
-            <a
-              href="about.html"
-              >About</a
-            >
+            <a href="about.html">About</a>
           </li>
           <li class="list nav-target active" id="projects-link">
-            <a
-              href="projects.html"
-              role="button"
-              >Projects</a
-            >
+            <a href="projects.html" role="button">Projects</a>
           </li>
           <li class="list nav-target" id="contact-link">
             <a href="contact.html">Contact</a>
@@ -79,29 +75,71 @@
               <div
                 id="project-carousel"
                 class="carousel slide carousel-dark carousel-fade col-lg-6"
-                data-ride="carousel"
+                data-bs-ride="carousel"
               >
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#project-carousel"
-                    data-slide-to="0"
+                <div class="carousel-indicators">
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="0"
                     class="active"
-                  ></li>
-                  <li data-target="#project-carousel" data-slide-to="1"></li>
-                  <li data-target="#project-carousel" data-slide-to="2"></li>
-                  <li data-target="#project-carousel" data-slide-to="3"></li>
-                  <li data-target="#project-carousel" data-slide-to="4"></li>
-                  <li data-target="#project-carousel" data-slide-to="5"></li>
-                  <li data-target="#project-carousel" data-slide-to="6"></li>
-                  <li data-target="#project-carousel" data-slide-to="7"></li>
-                  <li data-target="#project-carousel" data-slide-to="8"></li>
-                  <li data-target="#project-carousel" data-slide-to="9"></li>
-                  <li data-target="#project-carousel" data-slide-to="10"></li>
-                  <li data-target="#project-carousel" data-slide-to="11"></li>
-                  <li data-target="#project-carousel" data-slide-to="12"></li>
-                  <li data-target="#project-carousel" data-slide-to="13"></li>
-                  <li data-target="#project-carousel" data-slide-to="14"></li>
-                </ol>
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="2"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="3"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="4"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="5"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="6"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="7"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="8"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="9"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="10"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="11"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="12"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="13"
+                  ></button>
+                  <button
+                    data-bs-target="#project-carousel"
+                    data-bs-slide-to="14"
+                  ></button>
+                </div>
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
                     <iframe
@@ -114,11 +152,8 @@
                       loading="lazy"
                       allowtransparency="true"
                       allowfullscreen="false"
+                      data-show-tab-bar="no"
                     >
-                      See the Pen
-                      <a href="https://codepen.io/denksy/pen/XWNgoev">#4</a>
-                      by denksy (<a href="https://codepen.io/denksy">@denksy</a
-                      >) on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                   </div>
                   <div class="carousel-item">
@@ -385,28 +420,30 @@
                   </div>
                 </div>
 
-                <a
+                <button
+                  type="button"
                   class="carousel-control-prev"
-                  href="#project-carousel"
+                  data-bs-target="#project-carousel"
                   role="button"
-                  data-slide="prev"
+                  data-bs-slide="prev"
                 >
                   <span
                     class="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                </a>
-                <a
+                </button>
+                <button
+                  type="button"
                   class="carousel-control-next"
-                  href="#project-carousel"
+                  data-bs-target="#project-carousel"
                   role="button"
-                  data-slide="next"
+                  data-bs-slide="next"
                 >
                   <span
                     class="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -668,7 +705,9 @@
       </section>
       <!-- background -->
 
-      <img src="images/stars2.svg" alt="stars" class="stars" />
+      <div class="stars-cont">
+        <img src="images/stars2.svg" alt="stars" class="stars" />
+      </div>
       <div class="shooting-star ss1"></div>
       <div class="shooting-star ss2"></div>
       <div class="shooting-star ss3"></div>
