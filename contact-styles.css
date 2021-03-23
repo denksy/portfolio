@@ -8,12 +8,14 @@ body {
 }
 /* background */
 
+
 .sun-cont {
   position: absolute;
   width: 600px;
   height: 600px;
   bottom: 7%;
   left: 50%;
+
 }
 
 .sun {
@@ -83,12 +85,11 @@ body {
   z-index: 7;
 }
 
-.night {
+.dusk {
   width: 100%;
   height: 200%;
   background: linear-gradient(
     180deg,
-    rgba(5, 0, 17, 1) 15%,
     rgba(29, 12, 60, 1) 30%,
     rgba(26, 1, 42, 1) 50%,
     rgba(253, 29, 29, 0.8) 82%,
@@ -100,27 +101,10 @@ body {
   overflow-y: hidden;
 }
 
-.dusk {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(29, 12, 60, 1) 10%,
-    rgba(26, 1, 42, 1) 20%,
-    rgba(253, 29, 29, 0.8) 82%,
-    rgba(255, 98, 0, 0.8) 99%
-  );
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  overflow-y: hidden;
-}
-
 .stars {
   position: absolute;
-  width: 100%;
   top: -70px;
-  left: 0;
+  width: 100%;
   z-index: 2;
   opacity: 0.7;
 }
@@ -128,7 +112,6 @@ body {
 @media (max-width: 1100px) {
   .stars {
     top: 0;
-    left: 0;
     transform: scale(1.5);
     opacity: 1;
   }
@@ -185,10 +168,9 @@ body {
     transform: scale(0.5) translate(-50%, 30%);
   }
   .stars {
-    object-fit:cover;
+    transform: scale(1.3);
     opacity: 1;
-    width: 80%;
-    height: 500px;
+    width: 200%;
   }
 }
 
@@ -247,26 +229,16 @@ body {
   width: 30px;
 }
 
-.active a{
-  color: #000;
-}
-
-.active #invert-home{
-  filter: invert(1);
-}
-
 .active a:after {
   content: "";
   width: 65px;
   height: 65px;
   position: absolute;
   border: 1px solid #fff;
-  background: #fff;
   bottom: 50%;
   left: 50%;
   margin: 0 0 -32.5px -32.5px;
   transform: rotate(45deg);
-  z-index: -1;
 }
 
 @media (max-width: 770px) {
@@ -296,10 +268,7 @@ body {
   }
 }
 
-.carousel-indicators button{
-  background:#fff !important;
-}
-
+/* welcome section */
 .name-card {
   width: 100%;
   height: 500px;
@@ -311,7 +280,6 @@ body {
   top: 150px;
   left: 50px;
   z-index: 10;
-  animation: slideInLeft 1s ease-in-out;
 }
 
 h1 {
@@ -352,7 +320,7 @@ h2 {
   margin: 160px 0 0 0;
   padding-top: 20px;
   width: 100%;
-  background: rgba(85, 77, 77, 0.2);
+  background: rgba(172, 155, 155, 0.2);
   border-left: none;
   border-right: none;
   z-index: 11;
@@ -360,7 +328,7 @@ h2 {
 
 /* about section */
 .about-cont {
-  background: rgba(85, 77, 77, 0.2);
+  background: rgba(172, 155, 155, 0.2);
   position: relative;
   top: 170px;
   z-index: 12;
@@ -376,41 +344,20 @@ h2 {
 /* contact section */
 .contact-cont{
   position: absolute;
-  top: 50%;
+  bottom: 10%;
   left: 50%;
-  margin: -250px 0 0 0;
   z-index: 13;
   background: rgba(51, 46, 46, 0.3);
-  height: 550px;
+  height: 500px;
 }
 
 .mail{
   animation: tada 2s ease-in-out infinite;
 }
 
-.tag-icon{
-  color: #fff;
-}
-
-.tag-icon:hover{
-  animation: headShake 1s;
-}
-
 /* for showing up a section*/
 .collapsing-show {
   animation: fadeInDownBig 1s ease-in-out;
-}
-.zoom-in{
-  animation: zoomIn 1s ease-in-out;
-}
-
-/* footer */
-footer{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 50;
-  color: rgb(54, 52, 52);
 }
 
 /* animations */
